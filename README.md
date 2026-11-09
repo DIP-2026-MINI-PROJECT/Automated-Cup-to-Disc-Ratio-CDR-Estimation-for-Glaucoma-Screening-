@@ -56,14 +56,17 @@ Drishti-GS retinal fundus image dataset
 git clone https://github.com/DIP-2026-MINI-PROJECT/Automated-Cup-to-Disc-Ratio-CDR-Estimation-for-Glaucoma-Screening-.git
 
 2. Requirements
-MATLAB with the Image Processing Toolbox R2025b
+   MATLAB R2025b with the Image Processing Toolbox
 
 3. Run the Code
-    cdr_estimation.m
+ Open MATLAB, set the current folder to the cloned repository, and run:cdr_estimation
 
 ### Outputs:
-* Important intermediate steps
-* Final output images 
+ Overall Results:
+* A total of 10 test images were used: 5 normal and 5 glaucoma fundus images.
+* The Cup-to-Disc Ratio (CDR) was calculated for all 10 images.
+* Most normal images had a CDR below 0.5, and most glaucoma images had a CDR above 0.5, which fits the standard screening threshold.
+* All result images are saved in the `outputs/` folder.
 
 ### References:
 1. -"Identifying the Edges of the Optic Cup and the Optic Disc..." (Sensors, PMC)
