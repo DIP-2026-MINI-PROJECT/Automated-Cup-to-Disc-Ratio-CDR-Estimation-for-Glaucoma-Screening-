@@ -1,4 +1,4 @@
-Haa 
+
 ### Project Name-Automated Cup-to-Disc Ratio (CDR) Estimation for Glaucoma Screening Using Classical Image Processing Techniques
 
 ### Project Description:This project focuses on developing an automated glaucoma screening system using retinal fundus images and classical image processing techniques. It   identifies the optic disc and optic cup, calculates the Cup-to-Disc Ratio (CDR), and helps indicate potential signs of glaucoma without using deep learning or AI model training.
@@ -56,11 +56,11 @@ Drishti-GS retinal fundus image dataset
 git clone https://github.com/DIP-2026-MINI-PROJECT/Automated-Cup-to-Disc-Ratio-CDR-Estimation-for-Glaucoma-Screening-.git
 
 2. Requirements
-MATLAB with the Image Processing Toolbox (mention your MATLAB version)
+MATLAB with the Image Processing Toolbox R2025b
 
 3. Run the Code
-Open MATLAB, set the current folder to the repo, and run main.m
-(the script reads images from data/ and saves results to outputs/)
+    cdr_estimation.m
+
 ### Outputs:
 * Important intermediate steps
 * Final output images 
