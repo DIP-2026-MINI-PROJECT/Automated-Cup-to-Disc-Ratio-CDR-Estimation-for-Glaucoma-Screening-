@@ -63,9 +63,15 @@ git clone https://github.com/DIP-2026-MINI-PROJECT/Automated-Cup-to-Disc-Ratio-C
 
 ### Outputs:
  Overall Results:
-* A total of 10 test images were used: 5 normal and 5 glaucoma fundus images.
-* The Cup-to-Disc Ratio (CDR) was calculated for all 10 images.
-* Most normal images had a CDR below 0.5, and most glaucoma images had a CDR above 0.5, which fits the standard screening threshold.
+* 10 test images were used (5 normal, 5 glaucoma) from the Drishti-GS dataset.
+* CDR was calculated for all 10 images.
+* All 5 glaucoma images had CDR > 0.5 (range 0.53 to 0.94).
+* Among the normal images, only 1 of 5 had CDR < 0.5; the other 4 were over-estimated
+  (false positives or borderline).
+* Classification accuracy: 62.50% on the 8 images with a definite label
+  (2 borderline images were excluded from the accuracy calculation).
+* Limitation: the classical segmentation approach tends to over-estimate CDR on some
+  normal images, which lowers specificity.
 * All result images are saved in the `outputs/` folder.
 
 ### References:
